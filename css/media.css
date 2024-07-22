@@ -1,0 +1,76 @@
+@media (max-width: 991px) {
+    .navbar {
+        background-color: var(--color-black-0d);
+    }
+   .navbar-toggler-icon {
+    background-color: white;
+   }
+}
+
+@media (max-width: 1200px) {
+    .navbar-nav .nav-item .nav-link {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 991px) {  
+    .swiper img{
+    margin-left: -20%;
+    } 
+}
+
+@media (max-width: 1400px) {
+    .slide .slide-item:nth-child(3){
+        display: none;
+    }
+    
+    .slide .slide-item:nth-child(4){
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .slide-item .content{
+        margin-left: -5rem;
+        max-width: 15rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .home-video iframe {
+        height: 15rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .owlCarousel {
+        margin-top: 15rem !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .employer {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .dot-line .owl-dots button span::after {
+        width: 200px;
+        left: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .dot-line .owl-dots button span::after {
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dot-line .owl-dots button span::after {
+        display: none;
+    }
+}

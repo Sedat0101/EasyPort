@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    .swiper-slide img {
+      width: 500px;
+      height: 700px !important;
+      object-fit: contain;
+    }
+  </style>
+  <title>Easyport</title>
+</head>
+<body>
+  <!-- Navbar start -->
+  <nav id="navi" class="navbar fixed-top navbar-expand-lg w-100 pt-4 pb-4">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/footerlogo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto text-center gap-4">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">ANA SAYFA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="referanslar.html">REFERANSLAR</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              ÖZELLİKLER
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="isVerenler.html">İŞ VERENLER İÇİN</a></li>
+              <li><a class="dropdown-item" href="suruculer.html">SÜRÜCÜLER İÇİN</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nedir.html">EASYPORT NEDİR?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kariyer.html">KARİYER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="iletisim.html">İLETİŞİM</a>
+          </li>
+          <li class="nav-item button">
+            <a class="nav-link" href="#">
+              <button class="btn-nav" type="button">GİRİŞ YAP</button>
+            </a>
+          </li>
+          <li class="nav-item button">
+            <a class="nav-link" href="#">
+              <button class="btn-nav2 border-0" type="button">DEMO TALEP ET</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar end -->
+
+  <!-- Başlangıç Resmi start -->
+  <section class="employer d-flex align-items-end">
+    <div class="container">
+      <div class="row">
+       <div class="col-lg-5 employer-content text-white ">
+          <p>MÜŞTERİ VE SÜRÜCÜ</p>
+          <h1 class="display-4 fw-medium"><b>Fast And Modern</b> Solutions In Transportation</h1>
+          <p class="fw-light mt-4">Her durum için EASYPORT platformuna doğru erişim: Düzenli olarak tarayıcı aracılığıyla, ERP yazılımınız aracılığıyla API aracılığıyla veya web mağazası aracılığıyla</p>
+       </div>
+       <div class="col-lg-7">
+        <div class=" d-none d-lg-block">
+          <img class="employer-img" src="img/monitor.png" alt="">
+        </div>
+        <div class="position-absolute top-100 start-50 translate-middle d-none d-lg-block">
+          <img src="img/features-for-employers-header-trucks.png" alt="">
+        </div>
+       </div>
+      </div>
+    </div>
+  </section>
+  <!-- Başlangıç Resmi end -->
+
+  <!-- İş seç start -->
+   <section>
+    <div class="container  margin-8">
+      <div class="row align-items-center">
+        <div class="col-lg-5 request-content">
+          <a class="arrow text-decoration-none fs-5 border-bottom border-dark" href="">Müşteri</a>
+          <h3 class="mt-4 fs-1 fw-semibold">iş Seç</h3>
+          <p class="opacity-75 mt-5">easyport uygulamasında hesabınızı oluşturduktan sonra transfer emirlerini arayabilirsiniz. Hangi siparişleri kabul etmek istediğinize kendiniz karar verirsiniz.</p>
+          <button class="btn mt-5">Daha Fazla Bilgi</button>
+        </div>
+        <div class="col-lg-7 position-relative">
+          <div class="surucu-sayi text-center position-absolute">01</div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <a href="img/choose-job-1.jpg" data-fancybox="gallery" class="swiper-slide">
+                <img src="img/choose-job-1.jpg" alt="">
+              </a>
+              <a href="img/choose-job-2.png" data-fancybox="gallery" class="swiper-slide">
+                <img src="img/choose-job-2.png" alt="">
+              </a>
+              <a href="img/choose-job-3.jpg" data-fancybox="gallery" class="swiper-slide">
+                <img src="img/choose-job-3.jpg" alt="">
+              </a>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+  <!-- İş seç end -->
+
+   <!-- transferi ayarla start -->
+    <section class="transfer">
+      <div class="container mt-5">
+        <div class="row align-items-center">
+          <div class="col-lg-7 pb-5 position-relative">
+            <div class="surucu-sayi text-center position-absolute end-0">02</div>
+            <div class="swiper mySwiper ">
+              <div class="swiper-wrapper">
+                <a href="img/choose-job-1.jpg" data-fancybox="gallery2" class="swiper-slide">
+                  <img src="img/choose-job-1.jpg" alt="">
+                </a>
+                <a href="img/choose-job-2.png" data-fancybox="gallery2" class="swiper-slide">
+                  <img src="img/choose-job-2.png" alt="">
+                </a>
+                <a href="img/choose-job-3.jpg" data-fancybox="gallery2" class="swiper-slide">
+                  <img src="img/choose-job-3.jpg" alt="">
+                </a>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div class="col-lg-5 request-content text-end">
+            <a class="arrow text-decoration-none fs-5 border-bottom border-dark" href="">Müşteri</a>
+            <h3 class="mt-4 fs-1 fw-semibold">Transferleri Ayarla</h3>
+            <p class="opacity-75 mt-5">Transfer günü aracı başlangıç noktasından teslim alırsınız. Uygulamayı kullanarak teslim alma işlemini günlüğe kaydedebilir, varış noktasına doğru yol alabilir ve aracın başarıyla transferini onaylayabilirsiniz.</p>
+            <button class="btn mt-5">Daha Fazla Bilgi</button>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!-- transferi ayarla end -->
+
+   <!-- Para Kazanın start -->
+    <section class="request">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 request-content">
+            <a class="arrow text-decoration-none fs-5 border-bottom border-dark" href="">Müşteri</a>
+            <h3 class="mt-4 fs-1 fw-semibold">Para Kazanın</h3>
+            <p class="opacity-75 mt-5">Transferiniz tamamlandıktan sonra faturanızı oluşturursunuz. Faturanızı portalımız üzerinden oluşturup gönderebilirsiniz. İsterseniz 48 saat içinde paranızı alacaksınız!</p>
+            <button class="btn mt-5">Daha Fazla Bilgi</button>
+          </div>
+          <div class="col-lg-7 pb-5 position-relative">
+            <div class="surucu-sayi text-center position-absolute">03</div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <a href="img/choose-job-1.jpg" data-fancybox="gallery3" class="swiper-slide">
+                  <img src="img/choose-job-1.jpg" alt="">
+                </a>
+                <a href="img/choose-job-2.png" data-fancybox="gallery3" class="swiper-slide">
+                  <img src="img/choose-job-2.png" alt="">
+                </a>
+                <a href="img/choose-job-3.jpg" data-fancybox="gallery3" class="swiper-slide">
+                  <img src="img/choose-job-3.jpg" alt="">
+                </a>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!-- Para Kazanın end -->
+
+  <!-- Neye ihtiyacın var start -->
+   <section>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col request-content">
+          <a class="arrow text-decoration-none fs-5 border-bottom border-dark" href="">Müşteri</a>
+          <h3 class="mt-4 fs-1 fw-semibold">Neye İhtiyacın Var</h3>
+        </div>
+      </div>
+
+      <div class="row mt-5 surucu-card">
+        <div class="col-lg-4">
+          <div class="card border-0 rounded-0 text-center">
+            <img src="img/firstcard.png" class="mx-auto p-5" alt="">
+            <div class="card-body">
+              <h3 class="card-title mt-2">Ticaret Ruhsatı veya Ticaret Siciline Kayıt Belgesi</h3>
+              <p class="card-text mt-4">
+                Every day cars have to be transferred from A to B. Driver shortages, rigid contracts and outdated processes used to
+              </p>
+              <a href="#" class="btn rounded-0 mt-3 ps-4 pe-4 pt-2 pb-2">DAHA FAZLASI</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="card border-0 rounded-0 text-center">
+            <img src="img/firstcard.png" class="mx-auto p-5" alt="">
+            <div class="card-body">
+              <h3 class="card-title mt-2">Ticaret Ruhsatı veya Ticaret Siciline Kayıt Belgesi</h3>
+              <p class="card-text mt-4">
+                Every day cars have to be transferred from A to B. Driver shortages, rigid contracts and outdated processes used to
+              </p>
+              <a href="#" class="btn rounded-0 mt-3 ps-4 pe-4 pt-2 pb-2">DAHA FAZLASI</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="card border-0 rounded-0 text-center">
+            <img src="img/firstcard.png" class="mx-auto p-5" alt="">
+            <div class="card-body">
+              <h3 class="card-title mt-2">Ticaret Ruhsatı veya Ticaret Siciline Kayıt Belgesi</h3>
+              <p class="card-text mt-4">
+                Every day cars have to be transferred from A to B. Driver shortages, rigid contracts and outdated processes used to
+              </p>
+              <a href="#" class="btn rounded-0 mt-3 ps-4 pe-4 pt-2 pb-2">DAHA FAZLASI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+   </section>
+  <!-- Neye ihtiyacın var end -->
+
+   <!-- Home Banner start (Erkek resmi olan yer) -->
+   <section class="home-banner" ::after>
+    <div class="container pt-5 pt-lg-0">
+      <div class="row align-items-center">
+        <div class="home-banner-left z-3 col-xl-6 col-lg-5">
+            <a class="arrow-video" href="">Uygulama Web</a>
+            <h3 class="fs-1">Araç Transferlerini Çevrimiçi Yönetin</h3>
+            <p class="f-6">Every day cars have to be transferred from A to B. Driver shortages, rigid contracts and
+              outdated
+              processes used to make this task time-consuming and costly Every day cars have to be transferred from A
+              to B. Driver shortages, rigid contracts and outdated processes used to make this task time-consuming and
+              costly</p>
+            <button class="btn">Uygulamayı Dene</button>
+        </div>
+        <div class="col-xl-6 col-lg-7 d-none d-lg-block">
+          <img class="banner-right-img z-3" src="img/bgMan.png" alt="">
+        </div>
+      </div>
+    </div>
+</section>
+  <!-- Home Banner end (Erkek resmi olan yer)-->
+
+  <!-- Footer start -->
+  <footer>
+    <div class="container">
+        <div class="pt-5">
+          <img src="img/footerlogo.png" alt="">
+          <hr class="mt-4 text-white">
+        </div>
+      <div class="row mt-5">
+        <div class="col-md-3 first-footer">
+          <p>Frankenstrasse 29</p>
+          <p>20097 HAMBURG</p>
+          <p>ALMANYA</p>
+        </div>
+        <div class="col-md-5 col-lg-4 first-footer">
+          <p>Açılış saatleri: Pzt.</p>
+          <p>Pazartesi-Perşembe: 08:00 - 17:00</p>
+          <p>Cuma: 08:00 - 15:00</p>
+        </div>
+        <div class="col-md-4 col-lg-3 link-footer">
+          <ul class="list-unstyled">
+            <li>
+              <a href="#">Müşteriler için yardım</a>
+            </li>
+            <li>
+              <a href="#">Sürücüler için yardım</a>
+            </li>
+            <li>
+              <a href="#">Sıkça Sorulan Sorular</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex align-items-lg-end justify-content-lg-end mt-5">
+        <div class=" d-flex align-items-lg-end flex-column">
+          <a href="">
+            <img src="img/app-store.png" alt="" width="100px">
+          </a>
+          <a href="">
+          <img src="img/google-play.png" alt="" width="100px">
+        </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="img/qr-kod.png" alt="" width="70px">
+          </a>
+        </div>
+      </div>
+      <div class="social-link mt-5 mt-lg-0">
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-facebook ms-1"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-linkedin ms-1"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-youtube ms-1"></i>
+          </a>
+        </div>
+      <div class="row mt-4 footer-end pb-5">
+        <div class="col-md-7">
+          <a href="#">Aydınlatma Metni</a>
+          <a href="#">Veri Sahibi</a>
+          <a href="#">Başvuru Formu</a>
+          <a href="#">Çerez Politikası</a>
+        </div>
+        <div class="col-md-5 text-end">
+          <p>Easyport. Tüm Haklar Saklıdır. © 2024</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+<script>
+  window.addEventListener("scroll", changeBg)
+  function changeBg() {
+    let navbar = document.getElementById("navi")
+    if (window.scrollY < 100) {
+      navbar.classList.remove("nav-color")
+    } else {
+      navbar.classList.add("nav-color")
+    } 
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    let swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    loop: true,
+    loopedSlides: 1,
+    speed: 500,
+    preloadImages: true,
+    lazy: true,
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    spaceBetween: -50,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 500,
+      modifier: 1,
+      slideShadows: false,
+    },
+      mousewheel: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+Fancybox.bind("[data-fancybox]", {
+});
+</script>
+
+<script>
+  Fancybox.bind("[data-fancybox], [gallery2]", {
+});
+</script>
+
+<script>
+  Fancybox.bind("[data-fancybox], [gallery3]", {
+});
+</script>
+
+  <script src="js/app.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
